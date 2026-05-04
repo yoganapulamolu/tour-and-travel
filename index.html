@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore India - Tour & Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Explore India</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#places">Destinations</a>
+        <a href="#accommodation">Accommodation</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Discover Beautiful Places</h2>
+    <p>Travel | Explore | Enjoy</p>
+</section>
+
+<!-- PLACES -->
+<section id="places">
+    <h2>Popular Destinations</h2>
+
+    <div class="places-container">
+
+        <div class="card">
+            <img src="assets\jaipur.jpg">
+            <h3>Jaipur</h3>
+            <p>Famous for palaces and rich Rajasthani culture.</p>
+            <p>Click below to explore more about jaipur.</p>
+            <a href="jaipur.html" class="btn">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="assets\kashmir.jpg">
+            <h3>Kashmir</h3>
+            <p>Heaven on Earth with snowy landscapes.</p>
+            <p>Click below to explore more about kashmir.</p>
+            <a href="kashmir.html" class="btn">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="assets\Varanasi.jpg">
+            <h3>Varanasi</h3>
+            <p>Spiritual city located on the banks of Ganga.</p>
+            <p>Click below to explore more about varanasi.</p>
+            <a href="varanasi.html" class="btn">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="assets\goa.jpg">
+            <h3>Goa</h3>
+            <p>Enjoy nightlife and sandy beaches.</p>
+            <p>Click below to explore more about goa.</p>
+            <a href="goa.html" class="btn">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="assets\kerala.jpg">
+            <h3>Kerala</h3>
+            <p>Experience nature and houseboats.</p>
+            <p>Click below to explore more about kerala.</p>
+            <a href="kerala.html" class="btn">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="assets\manali.jpg">
+            <h3>Manali</h3>
+            <p>Adventure and scenic beauty.</p>
+            <p>Click below to explore more about manali.</p>
+            <a href="manali.html" class="btn">View Details</a>
+        </div>
+
+        <div class="place-card">
+            <img src="assets\hampi.jpg">
+            <h3>Hampi</h3>
+            <p>Click below to explore more about Hampi.</p>
+            <a href="hampi.html" class="btn">View Details</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section id="travel-booking">
+    <h2>Travel Booking</h2>
+
+    <p>Book your dream destination with us. Choose your preferred place, date, and number of travelers.</p>
+
+    <form id="bookingForm">
+
+        <input type="text" placeholder="Full Name" required><br>
+
+        <input type="tel" placeholder="Phone Number" required><br>
+
+        <select required>
+            <option value="">Choose Destination</option>
+            <option>Manali – ₹8000</option>
+            <option>Goa – ₹7000</option>
+            <option>Kerala – ₹9000</option>
+            <option>Jaipur – ₹6000</option>
+            <option>Hampi – ₹5000</option>
+            <option>Kashmir – ₹10000</option>
+            <option>Varanasi – ₹4000</option>
+        </select><br>
+
+        <label>Travel Date</label><br>
+        <input type="date" required><br>
+
+        <label>Number of Travelers</label><br>
+        <input type="number" min="1" required><br>
+
+        <label>Travel Type</label><br>
+        <select required>
+            <option>Standard Package</option>
+            <option>Premium Package</option>
+            <option>Luxury Package</option>
+        </select><br>
+
+        <textarea placeholder="Special Requests (Optional)" rows="3"></textarea><br>
+
+        <button type="submit">Book Now</button>
+
+        <p style="font-size: 12px; margin-top: 10px;">
+            *Our team will contact you within 24 hours to confirm your booking.
+        </p>
+
+    </form>
+</section>
+<!-- ACCOMMODATION -->
+<section id="accommodation">
+    <h2>Best Accommodation</h2>
+
+    <form>
+        <input type="text" placeholder="Full Name" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <input type="number" placeholder="phone number" required><br>
+        <p>check in</p>
+        <input type="date" required><br>
+        <p>check out</p>
+        <input type="date" required><br>
+        <p>persons</p>
+        <input type="number" min="1" required><br>
+
+        <select required>
+            <option>Select Room</option>
+            <option>Single</option>
+            <option>Double</option>
+            <option>Luxury</option>
+        </select><br>
+
+        <button type="submit">Book Room</button>
+
+        <!-- POPUP BUTTON -->
+        <button type="button" onclick="openAccommodationPopup()">
+            View Best Accommodation
+        </button>
+    </form>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Us</h2>
+
+    <p><strong>Explore India Tours & Travels</strong> is a trusted travel company dedicated to providing unforgettable travel experiences across India.</p>
+
+    <p>We specialize in holiday packages, adventure trips, spiritual tours, honeymoon packages, and customized travel plans to suit every budget.</p>
+
+    <p>Our mission is to make your journey safe, comfortable, and memorable. From booking tickets to arranging accommodation and local guides, we handle everything for you.</p>
+
+    <h3>Why Choose Us?</h3>
+
+    <ul style="list-style: none; padding: 0;">
+        <li>✔ Affordable Tour Packages</li>
+        <li>✔ 24/7 Customer Support</li>
+        <li>✔ Trusted & Experienced Team</li>
+        <li>✔ Best Accommodation Options</li>
+        <li>✔ Safe & Comfortable Travel</li>
+    </ul>
+
+    <p>Travel with us and discover the beauty of India with comfort and confidence!</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <p><strong>Explore India Tours & Travels</strong></p>
+    <p>📍 Address: Sajjapuram, Andhra Pradesh, India</p>
+    <p>📞 Phone: +91 9876543210</p>
+    <p>📧 Email: explore@travel.com</p>
+    <p>🕒 Working Hours: Monday – Saturday (9:00 AM – 8:00 PM)</p>
+
+    <h3>Send Us a Message</h3>
+
+    <form>
+        <input type="text" placeholder="Your Name" required><br>
+        <input type="email" placeholder="Your Email" required><br>
+        <textarea placeholder="Your Message" rows="4" required></textarea><br>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+<footer>
+    <p>© 2026 Tour & Travel</p>
+</footer>
+
+<!-- BOOKING SUCCESS POPUP -->
+<div id="bookingPopup" class="popup">
+    <div class="popup-box">
+        Booking Successful!
+        <br><br>
+        <button onclick="closeBookingPopup()">OK</button>
+    </div>
+</div>
+
+<!-- ACCOMMODATION SUCCESS POPUP -->
+<div id="accommodationSuccess"
+     style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%);
+     background:white; padding:20px; border:1px solid black; text-align:center;">
+
+    Accommodation Booked Successfully!
+    <br><br>
+    <button onclick="document.getElementById('accommodationSuccess').style.display='none'">
+        OK
+    </button>
+</div>
+
+<!-- BEST ACCOMMODATION POPUP -->
+<div id="accommodationPopup"
+     style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+     background:rgba(0,0,0,0.6);">
+
+    <div style="background:white; width:300px; padding:20px;
+        margin:100px auto; border-radius:10px; text-align:center;">
+
+        <h3>Best Accommodation</h3>
+        <p>Taj Hotel – ₹5000</p>
+        <p>Green Park – ₹3500</p>
+        <p>Royal Stay – ₹2800</p>
+
+        <button onclick="closeAccommodationPopup()">Close</button>
+    </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+
+// Booking popup
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("bookingPopup").style.display = "block";
+});
+
+function closeBookingPopup(){
+    document.getElementById("bookingPopup").style.display = "none";
+}
+
+// Accommodation booking popup
+document.querySelector("#accommodation form").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("accommodationSuccess").style.display = "block";
+});
+
+// Best accommodation popup
+function openAccommodationPopup(){
+    document.getElementById("accommodationPopup").style.display = "block";
+}
+
+function closeAccommodationPopup(){
+    document.getElementById("accommodationPopup").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

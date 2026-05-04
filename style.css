@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 20px;
+}
+
+nav a {
+    color: orange;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("assets/backgroundimage.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* BUTTONS */
+button, .btn {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover, .btn:hover {
+    background: #e65c00;
+}
+#contact textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+}
+
+#about, #contact {
+    background: #f2f2f2;
+}
+
+/* PLACES SECTION */
+.places-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* UNIFIED CARD STYLE */
+.card, .place-card {
+    width: 280px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover, .place-card:hover {
+    transform: translateY(-10px);
+}
+
+.card img, .place-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3, .place-card h3 {
+    margin: 10px 0 5px;
+}
+
+.card p, .place-card p {
+    padding: 0 10px 15px;
+    font-size: 14px;
+}
+
+/* FORMS */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+form input, form select {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer {
+    background: #0f2027;
+    color: white;
+    padding: 15px;
+}
+
+/* POPUP BACKGROUND */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+/* POPUP BOX */
+.popup-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+#about {
+    background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+}
+
+#about ul li {
+    margin: 8px 0;
+    font-weight: 500;
+}
+#travel-booking {
+    background: #ffffff;
+}
+
+#travel-booking textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+}
